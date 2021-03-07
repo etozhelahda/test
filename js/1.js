@@ -71,6 +71,7 @@ function Score() {
     score = 0;
     clearForm("testing");
 }
+// жмешь "Ок" в аллерте и можно заново выбирать ответы
 function clearForm(name) {
     var f = document.forms[name];
     for (var i = 0; i < f.elements.length; ++i) {
