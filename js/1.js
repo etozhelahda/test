@@ -43,11 +43,12 @@ var questions = [
     
 ];
 
+// массив ответов и аллерт с результатами
 var yourAns = new Array;
 var score = 0;
 
 function Engine(question, answer) { yourAns[question] = answer; }
-
+// тут счетчик правильных ответов (если число в массиве совпадает с числом правильного ответа, то +1 балл и пишет "Отлично!", если нет, то оно отображается какой ответ должен быть), потом это все в аллерте отображается
 function Score() {
     var answerText = "Результаты:\n";
     for (var i = 0; i < yourAns.length; ++i) {
@@ -62,7 +63,7 @@ function Score() {
             ++score;
         }
     }
-
+// ну тут все ясно
     answerText = answerText + "\nПравильно ответил(а): " + score + "\n";
     answerText = answerText + "\nМолодец отвечающий! Здорово у тебя получилось!";
 
